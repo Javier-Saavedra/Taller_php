@@ -13,9 +13,10 @@ echo '<br>';
 for ($i = 1; $i <= $cantidad_notas; $i++) {
     echo "<label for='nota$i'>Nota $i:</label>";
     echo "<input type='number' name='nota$i' step='0.1' min='" . $_POST['rango_min'] . "' max='" . $_POST['rango_max'] . "' required><br><br>";
+    <input type="submit" value="Calcular">
 }
 
-echo '<input value="Calcular" onclick="calc($cantidad_notas, $rango_min, $rango_max, $suma_notas, $materia)">';
+
 
 
 function calc($cantidad_notas, $rango_min, $rango_max, $suma_notas, $materia){
